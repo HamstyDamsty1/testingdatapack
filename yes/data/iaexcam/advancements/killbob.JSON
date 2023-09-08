@@ -1,0 +1,33 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:polished_blackstone_bricks"
+      },
+      "title": "Bob Slayer",
+      "description": "Kill Bob the Builfer",
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:player_killed_entity",
+        "conditions": {
+          "entity": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "minecraft:vindicator",
+                "nbt": "CustomName:\"\\\"Bob The Builder\\\"\""
+              }
+            }
+          ]
+        }
+      }
+    },
+    "requirements": [
+      [],
+      []
+    ]
+  }
+  
